@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+body
+{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+header
+{
+	font-family: 'Shrikhand', cursive;
+	text-align: center;
+	box-shadow: 0px 3px 3px lightgrey;
+	padding: 0.1rem;
+	position: relative;
+}
+
+a
+{
+	text-decoration: none;
+
+}
+
+h3
+{
+	padding-top: 1rem;
+	margin: 0;
+}
+
+p
+{
+	
+	font-weight: lighter;
+}
+
+.titre_ohmyfood
+{
+	color: black;
+}
+
+.city
+{
+
+    text-align: center;
+    padding: 1%;
+    height: 40px;
+    background-color: #f3f3f3;
+    font-size: 10px;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+
+
+	
+}
+
+.city i
+{
+font-size: 19px;
+}
+
+.explorer
+{
+	text-align: center;
+	background-color: #fafafa;
+	padding: 1.5rem;
+
+}
+
+.explorer p
+{
+	font-weight: lighter;
+}
+
+.explorer button
+{
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	box-shadow: 5px 5px 8px lightgrey;
+	border-radius: 25px;
+	transition: all 250ms;
+	margin-top: 0.5rem;
+	background-image: linear-gradient(to top, #9356DC, #FF79DA);
+	margin-bottom: 3rem;
+
+}
+
+.button_decoration
+{
+	text-decoration: none;
+	color: white;
+}
+
+.explorer button:hover
+{
+	transform: scale(1.04);
+	cursor: pointer;
+}
+
+.fonctionnement
+{
+	counter-reset: numbers;
+	margin-bottom: 4rem;
+}
+
+.fonctionnement h2
+{
+	padding: 0 1rem;
+	margin-top: 3rem;
+}
+
+.fonctionnement ol 
+{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 0 1rem;
+	margin-top: 2rem;
+	text-align: center;
+
+}
+
+@media (max-width: 800px)
+{
+.fonctionnement ol 
+{
+	flex-direction: column;
+}
+}
+
+
+.fonctionnement li
+{
+	background-color: #f6f6f6;
+	padding: 1.5rem 2rem;
+	flex-grow: 1;
+	border-radius: 1rem;
+	box-shadow: 5px 5px 8px lightgrey;
+	list-style-type: none;
+	position: relative;
+}
+
+.fonctionnement li::before 
+{
+	content: counter(numbers);
+	counter-increment: numbers;
+	color: white;
+	background-color: #9356DC ;
+	width: 1.5rem;
+	height: 1.5rem;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 1.4rem;
+	left: -0.7rem;
+	
+}
+
+.fonctionnement_decoration:hover 
+{
+	transform: scale(1.02);
+	background-color: #F5EDFF;
+	cursor: pointer;
+
+}
+
+.fonctionnement_decoration:hover .fas 
+{
+	color: #9356DC;
+}
+
+
+.fonctionnement i
+{
+	margin-right: 1rem;
+	color: grey;
+}
+
+.fonctionnement_decoration
+{
+	color: black;
+}
+
+/*RESTAURANTS*/
+
+.titre_restaurant
+{
+	padding-left: 1rem;
+}
+
+.restaurants 
+{
+	background-color: #f6f6f6;
+	padding: 2rem 1rem;
+	margin-bottom: 0rem;
+
+}
+
+.restaurants__menu 
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	padding-bottom: 4rem;
+	padding-bottom: 4rem;
+
+}
+
+
+@media (max-width: 800px)
+{
+	.restaurants__menu
+	{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+
+.menu .restaurants__image_1
+{
+	border-radius: 1rem 1rem 0 0;
+	background-image: url('images/image_accueil_1.jpg');
+	height: 14rem;
+	background-size: cover;
+
+
+}
+
+.menu .restaurants__image_2
+{
+	border-radius: 1rem 1rem 0 0;
+	background-image: url('images/image_accueil_2.jpg');
+	height: 14rem;
+	background-size: cover;
+}
+
+.menu .restaurants__image_3
+{
+	border-radius: 1rem 1rem 0 0;
+	background-image: url('images/image_accueil_3.jpg');
+	height: 14rem;
+	background-size: cover;
+}
+
+.menu .restaurants__image_4
+{
+	border-radius: 1rem 1rem 0 0;
+	background-image: url('images/image_accueil_4.jpg');
+	height: 14rem;
+	background-size: cover;
+}
+
+
+.new
+{
+	position: relative;
+}
+
+.new::before
+{
+	content: "Nouveau";
+	position: absolute;
+	height: 2.3rem;
+	width: 5rem;
+	background-color: #99E2D0;
+	color: #007550;
+	display: grid;
+	place-items: center;
+	right: 1rem;
+	top: 1rem;
+}
+
+.menu .restaurants__description h3 p
+{
+	margin: 0;
+	
+}
+
+.restaurants__description
+{
+	background-color: white;
+	border-radius: 0 0 1rem 1rem;
+	margin-top: -1.5rem;
+	color: black;
+	padding: 0.1rem;
+	position: relative;
+	padding-left: 0.7rem;
+	box-shadow: 5px 5px 8px lightgrey;
+
+}
+
+.menu .restaurants__description .fa-solid
+{
+	right: 1rem;
+	position: absolute;
+	top: 2rem;
+	font-size: 1.7rem;
+	opacity: 0;
+	transition: all 300ms;
+
+}
+
+.fa-regular
+{
+	right: 1rem;
+	position: absolute;
+	top: 2rem;
+	font-size: 1.7rem;
+}
+
+.menu .restaurants__description .fa-solid:hover
+{
+	right: 1rem;
+	position: absolute;
+	top: 2rem;
+	font-size: 1.7rem;
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(#9356DC, #FF79DA);
+	opacity: 1;
+}
+
+
+
+/*FOOTER*/
+
+footer 
+{
+	background-color: #353535;
+	color: white;
+	padding: 1rem 1rem;
+	margin-top: 0;
+	padding-left: 1rem;
+
+}
+
+.fa-utensils
+{
+	color: white;
+}
+
+.fa-handshake-angle
+{
+	color: white;
+}
+
+
+
+.titre_footer
+{
+	font-family: 'Shrikhand', cursive;
+	color: white;
+}
+
+.footer_colorr
+{
+	color: white;
+	margin-left: 1rem;
+}
+
+.footer_colorr:hover
+{
+    text-decoration: underline;
+    position: relative;
+}
+
+.footer_colorrr
+{
+	color: white;
+	margin-left: 0.6rem;
+}
+
+.footer_colorrr:hover
+{
+    text-decoration: underline;
+    position: relative;
+}
+
+
+.footer_color
+{
+	color: white;
+}
+
+.footer_color:hover
+{
+    text-decoration: underline;
+    position: relative;
+}
+
+
+.footer_color
+{
+	color: white;
+}
+
+.footer_color:hover
+{
+    text-decoration: underline;
+    position: relative;
+}
