@@ -338,6 +338,43 @@ button:hover
 	}
 }
 
+.loader
+{
+	background-color: #ffffff;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	position: fixed;
+	inset: 0;
+	z-index: 3;
+	opacity: 0.8;
+	animation: loadernone 10ms 3s forwards;
+	transform-origin: top;
+	}
+
+.fa-burger
+{
+	color: #FF79DA;
+}
+
+
+@keyframes loadernone {
+	0% {
+	transform: scale(1);
+}
+100% {
+	transform: scale(0);
+}
+}
+
+@keyframes loaderanimation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+
 /*FOOTER*/
 
 footer 
