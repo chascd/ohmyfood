@@ -170,12 +170,14 @@ font-size: 19px;
 	transform: scale(1.02);
 	background-color: #F5EDFF;
 	cursor: pointer;
+	font-weight: bolder;
 
 }
 
 .fonctionnement_decoration:hover .fas 
 {
 	color: #9356DC;
+	font-size: 1.2rem;
 }
 
 
@@ -407,6 +409,7 @@ footer
 {
     text-decoration: underline;
     position: relative;
+	font-weight: bolder;
 }
 
 .footer_colorrr
@@ -419,6 +422,7 @@ footer
 {
     text-decoration: underline;
     position: relative;
+	font-weight: bolder;
 }
 
 
@@ -431,6 +435,7 @@ footer
 {
     text-decoration: underline;
     position: relative;
+	font-weight: bolder;
 }
 
 
@@ -443,4 +448,5 @@ footer
 {
     text-decoration: underline;
     position: relative;
+	font-weight: bolder;
 }
